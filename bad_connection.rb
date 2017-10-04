@@ -21,10 +21,13 @@ until ready_to_quit
     puts "ANYTHING ELSE I CAN HELP WITH?"
     # The first time you say GOODBYE! they say ANYTHING ELSE I CAN HELP WITH?
     input = gets.chomp
+    input == "GOODBYE!" && count > 0
+    puts "THANK YOU FOR CALLING!"
+    ready_to_quit = true
   end
 end
 
-  input == "GOODBYE!"
-  ready_to_quit = true
-  puts "THANK YOU FOR CALLING!"
+  # input == "GOODBYE!"
+  # ready_to_quit = true
+  # puts "THANK YOU FOR CALLING!"
 # The second time you say GOODBYE! they say THANK YOU FOR CALLING! and the program exits.
