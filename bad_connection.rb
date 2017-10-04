@@ -13,7 +13,7 @@ until ready_to_quit
   elsif input != "GOODBYE!"
     puts "NO, THIS IS NOT A PET STORE"
     input = gets.chomp
-  elsif input == "GOODBYE!"
+  else input == "GOODBYE!"
     count += 1
     puts "ANYTHING ELSE I CAN HELP WITH?"
     input = gets.chomp
